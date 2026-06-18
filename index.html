@@ -770,6 +770,22 @@ footer {
   .header-recruit { font-size: 14px; }
 }
 
+.img-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 640px) {
+  .img-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .img-grid-2 img {
+    aspect-ratio: 4/3;
+  }
+}
+
 @media (max-width: 640px) {
   .header-main {
     grid-template-columns: auto 1fr auto;
@@ -915,7 +931,7 @@ footer {
       運動療育りあんの指導員は皆、運動経験豊富なアスリートです。それだけではなく、運動指導経験者や様々な経験をもった運動のプロフェッショナルです。面談でお聞かせ頂いた内容から適切な療育を考えたり、ご要望にお応えさせて頂きます。スタッフの紹介は<a href="#staff" style="color:var(--teal-d); font-weight:700;">こちら</a>でさせて頂いております。
     </p>
 
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+    <div class="img-grid-2">
       <img src="img/interior.jpg" alt="施設の様子" style="width:100%; border-radius:12px; object-fit:cover; aspect-ratio:3/2; display:block;">
       <img src="img/schedule.jpg" alt="時間割" style="width:100%; border-radius:12px; object-fit:cover; aspect-ratio:3/2; display:block;">
     </div>
